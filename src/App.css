@@ -1,0 +1,111 @@
+.header{
+  text-align: center;
+  /* margin-top: 10px; */
+}
+
+.App{
+  padding: 0px 70px;
+}
+
+.input-box{
+  display: flex;
+}
+
+.para{
+  border: 1px solid black;
+  margin: 0%;
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+}
+.data{
+  
+  border: 1px solid black;
+  padding: 20px;
+  
+}
+
+.asider{
+  width: 35%;
+  float: right;
+  margin-top: -20%;
+}
+
+.main{
+  margin-top: 50px;
+  width:60%;
+  
+}
+
+.input{
+  height: 30px;
+  margin-right: 20px;
+  width: 180px;
+  padding: 5px;
+  padding-left: 30px;
+}
+
+.buy{
+  margin-top: 70px;
+}
+.radio{
+  padding: 10px;
+}
+.quantity{
+  margin-left: 37%;
+  margin-top: -7%;
+}
+
+.button{
+  margin-left: 50%;
+  margin-top: -6%;
+  
+}
+button{
+  width: 80px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  
+}
+
+.footer{
+  width: 94vw;
+  margin-top: 70px;
+  margin-left: -45px;
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  background-color: #a2aaad;
+  color: white;
+}
+
+
+th{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+h4{
+  width: 70%;
+  margin: 3%;
+  
+}
+span{
+  margin-top: -8%;
+  float: right;
+}
+
+.dropdown select{
+    z-index: 100;
+    margin-top: 90px;
+    margin-left: -230px;
+    width: 200px;
+    border: 1px solid black;
+    
+}
+
+.input-div{
+  margin-left: 80px;
+}

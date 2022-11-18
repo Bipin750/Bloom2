@@ -1,0 +1,116 @@
+.App{
+    height: 100%;
+    width: 96%;
+    /* border: 1px solid black; */
+    padding: 25px;
+    overflow-x: hidden;
+}
+.header{
+    /* border: 1px solid red; */
+    width: 95%;
+}
+.header h1{
+    margin: 0;
+}
+.header-content{
+    text-align: center;
+}
+.header-content h3{
+    margin: 0;
+    padding: 0;
+}
+.header-content h3 p{
+    margin: 0;
+}
+.main{
+    /* border: 1px solid black; */
+    width: 95%;
+}
+.radio{
+    margin-left: 20px;
+    height: 10px;
+}
+.input-box{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid blue; */
+    width: 60%;
+}
+.input{
+    height: 40px;
+    width: 200px;
+    margin-left: 20px;
+}
+.label{
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.buy{
+    margin: 40px;
+}
+.lots{
+    display: flex;
+    margin-top: -10px;
+    /* border: 1px solid black; */
+    width: 60%;
+}
+
+.quantity{
+    margin: 25px;
+}
+.button{
+    margin: 37px;
+    margin-left: 15%;
+    display: flex;
+}
+button{
+    margin-left: 20px;
+    border-radius: 20px;
+    width: 70px;
+    color: white;
+    background-color: black;
+    height: 30px;
+}
+.asider{
+    border: 1px solid black;
+    float:right;
+    width: 30%;
+    margin-top: -20%;
+    margin-right: 40px;
+    height: fit-content;
+}
+.para{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.data{
+    /* display: flex; */
+    
+}
+h4{
+    /* border: 1px solid black; */
+    margin: 2px;
+    padding: 5px;
+    width: 50%;
+}
+span{
+    float: right;
+    margin-top: -8%;
+}
+
+.footer{
+    width: 95%;
+    /* margin-top: 70px; */
+    /* margin-left: -45px; */
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    background-color: #a2aaad;
+    color: white;
+  }
+  th{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: small;
+  }
