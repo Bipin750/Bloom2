@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Main = () => {
   const [value, setValue] = useState("");
   const [secIndex, setSecIndex] = useState();
-  const [product, setProduct] =useState(true)
+  const [product, setProduct] = useState(true);
 
   const getData = () => {
     fetch("contract.txt")
@@ -39,14 +39,11 @@ const Main = () => {
     //  symbol.add(secIndex);
     //  console.log(symbol);
   };
+  useEffect(()=>{
+    getData();
+  },[])
 
-  const handleProduct=()=>{
-    setProduct(!product)
-   return <select>
-    <option value="">Future</option>
-    <option value="">Option</option>
-   </select>
-  }
+
 
   return (
     <div className="main">
@@ -57,7 +54,7 @@ const Main = () => {
       <input type="radio" value="MCX" name="radio" className="radio" />
       MCX
       <div className="input-box">
-        <div>
+        {/* <div>
           <p  className="label">Symbol</p>
           <input
             type="text"
@@ -66,32 +63,54 @@ const Main = () => {
             onClick={getData}
             onChange={handleChange}
           />
-        </div>
-        {/* <div className="dropdown">
-          <select name="" id="">
-            {secIndex.map((val)=>( <option>{val}</option>))}
-          </select>
         </div> */}
-        <div className="input-div">
-          <p className="label">Product</p>
-          <input type="text" className="input" placeholder="Select" onClick={handleProduct} />
-        </div>
-      
 
-        <div>
+        <div className="dropdown">
+          <p className="label">Symbol</p>
+          <select name="" id="" >
+            <option>Select</option>
+            {/* {secIndex.map((val)=>( <option>{val}</option>))} */}
+          </select>
+        </div>
+        <div className="dropdown">
+          <p className="label">Product</p>
+
+          <select name="" id="">
+            {/* {secIndex.map((val)=>( <option>{val}</option>))} */}
+            <option>Select</option>
+            <option>Future</option>
+            <option>Option</option>
+          </select>
+        </div>
+
+        <div className="dropdown">
           <p className="label">Expiry</p>
-          <input type="text" className="input" placeholder="Select" />
+
+          <select name="" id="">
+            {/* {secIndex.map((val)=>( <option>{val}</option>))} */}
+            <option>Select</option>
+            <option>asdfasdfsdf</option>
+          </select>
         </div>
       </div>
       <div className="input-box">
-        <div>
-          <p className="label">Option Type</p>
-          <input type="text" className="input" placeholder="Select" />
+        <div className="dropdown">
+          <p className="label">Option Type </p>
+
+          <select name="" id="">
+            {/* {secIndex.map((val)=>( <option>{val}</option>))} */}
+            <option>Select</option>
+            <option>asdfasdfsdf</option>
+          </select>
         </div>
 
-        <div>
+        <div className="dropdown">
           <p className="label">Strike Price</p>
-          <input type="text" className="input" placeholder="Select" />
+          <select name="" id="">
+            {/* {secIndex.map((val)=>( <option>{val}</option>))} */}
+            <option>Select</option>
+            <option>asdfasdfsdf</option>
+          </select>
         </div>
 
         <div className="buy">
@@ -111,9 +130,9 @@ const Main = () => {
           <p>Net Quantity:0</p>
         </div>
         <div className="button">
-            <button>Add</button>
-            <button>Reset</button>
-          </div>
+          <button>Add</button>
+          <button>Reset</button>
+        </div>
       </div>
     </div>
   );
