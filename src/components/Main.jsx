@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const Main = () => {
   const [value, setValue] = useState("");
-  const [secIndex, setSecIndex] = useState();
+  const [secIndex, setSecIndex] = useState([]);
   const [product, setProduct] = useState(true);
 
   const getData = () => {
@@ -30,6 +30,7 @@ const Main = () => {
           return val[3];
         });
         setSecIndex(symbol);
+        const set = new Set(secIndex);
         console.log(secIndex);
       });
   };
@@ -41,7 +42,7 @@ const Main = () => {
   };
   useEffect(()=>{
     getData();
-  },[])
+  },[2])
 
 
 
@@ -65,11 +66,12 @@ const Main = () => {
           />
         </div> */}
 
+        
         <div className="dropdown">
           <p className="label">Symbol</p>
-          <select name="" id="" >
+          <select name="" id=""  onClick={getData}>
             <option>Select</option>
-            {/* {secIndex.map((val)=>( <option>{val}</option>))} */}
+            {secIndex.map((val)=>( <option>{val}</option>))}
           </select>
         </div>
         <div className="dropdown">
